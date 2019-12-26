@@ -1,10 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 class User extends React.Component {
    constructor(props) {
-      console.log(props);
       super(props);
       this.state = {
          id: props.user.id,

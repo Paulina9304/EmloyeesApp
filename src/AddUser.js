@@ -64,7 +64,7 @@ class AddUser extends React.Component {
                   usersurname: '',
                   email:'',
                   date: '',
-                  gender: '',
+                  gender: false,
                   accept: false,
                   message: 'Pracownik dodany!',
               
@@ -189,6 +189,7 @@ class AddUser extends React.Component {
         <div>
           <label>
             <input type = 'radio' value='mężczyzna' checked={this.state.gender === 'mężczyzna'} onChange={this.onRadioChange}/>
+          Mężczyzna
           </label>
         </div>
            {this.state.errors.gender && <span className="alert alert-warning" role="alert">{this.messages.gedner_incorrect}</span>}
